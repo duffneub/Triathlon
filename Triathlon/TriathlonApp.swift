@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import TriathlonKit
+import WorldTriathlon
 
 @main
 struct TriathlonApp: App {
+    
+    @StateObject var store = Store(service: WorldTriathlonAPI())
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RankingsView()
+                .environmentObject(store)
         }
     }
 }

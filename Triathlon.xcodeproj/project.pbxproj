@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		17D9AE442A4E376500D31EA9 /* TriathlonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D9AE432A4E376500D31EA9 /* TriathlonApp.swift */; };
-		17D9AE462A4E376500D31EA9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D9AE452A4E376500D31EA9 /* ContentView.swift */; };
 		17D9AE482A4E376700D31EA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17D9AE472A4E376700D31EA9 /* Assets.xcassets */; };
 		17D9AE4B2A4E376700D31EA9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17D9AE4A2A4E376700D31EA9 /* Preview Assets.xcassets */; };
+		17D9AE522A4E37C900D31EA9 /* RankingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D9AE512A4E37C900D31EA9 /* RankingsView.swift */; };
+		17D9AE632A4E468800D31EA9 /* TriathlonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 17D9AE622A4E468800D31EA9 /* TriathlonKit */; };
+		17D9AE682A4E47C000D31EA9 /* WorldTriathlon in Frameworks */ = {isa = PBXBuildFile; productRef = 17D9AE672A4E47C000D31EA9 /* WorldTriathlon */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17D9AE402A4E376500D31EA9 /* Triathlon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Triathlon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D9AE432A4E376500D31EA9 /* TriathlonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriathlonApp.swift; sourceTree = "<group>"; };
-		17D9AE452A4E376500D31EA9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		17D9AE472A4E376700D31EA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17D9AE4A2A4E376700D31EA9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		17D9AE512A4E37C900D31EA9 /* RankingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingsView.swift; sourceTree = "<group>"; };
+		17D9AE602A4E463100D31EA9 /* TriathlonKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = TriathlonKit; sourceTree = "<group>"; };
+		17D9AE662A4E47B600D31EA9 /* WorldTriathlon */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = WorldTriathlon; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17D9AE632A4E468800D31EA9 /* TriathlonKit in Frameworks */,
+				17D9AE682A4E47C000D31EA9 /* WorldTriathlon in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,7 +42,10 @@
 			isa = PBXGroup;
 			children = (
 				17D9AE422A4E376500D31EA9 /* Triathlon */,
+				17D9AE662A4E47B600D31EA9 /* WorldTriathlon */,
+				17D9AE602A4E463100D31EA9 /* TriathlonKit */,
 				17D9AE412A4E376500D31EA9 /* Products */,
+				17D9AE612A4E468800D31EA9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,7 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				17D9AE432A4E376500D31EA9 /* TriathlonApp.swift */,
-				17D9AE452A4E376500D31EA9 /* ContentView.swift */,
+				17D9AE512A4E37C900D31EA9 /* RankingsView.swift */,
 				17D9AE472A4E376700D31EA9 /* Assets.xcassets */,
 				17D9AE492A4E376700D31EA9 /* Preview Content */,
 			);
@@ -65,6 +74,13 @@
 				17D9AE4A2A4E376700D31EA9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		17D9AE612A4E468800D31EA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +99,10 @@
 			dependencies = (
 			);
 			name = Triathlon;
+			packageProductDependencies = (
+				17D9AE622A4E468800D31EA9 /* TriathlonKit */,
+				17D9AE672A4E47C000D31EA9 /* WorldTriathlon */,
+			);
 			productName = Triathlon;
 			productReference = 17D9AE402A4E376500D31EA9 /* Triathlon.app */;
 			productType = "com.apple.product-type.application";
@@ -137,8 +157,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17D9AE462A4E376500D31EA9 /* ContentView.swift in Sources */,
 				17D9AE442A4E376500D31EA9 /* TriathlonApp.swift in Sources */,
+				17D9AE522A4E37C900D31EA9 /* RankingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +295,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +325,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +361,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		17D9AE622A4E468800D31EA9 /* TriathlonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TriathlonKit;
+		};
+		17D9AE672A4E47C000D31EA9 /* WorldTriathlon */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WorldTriathlon;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 17D9AE382A4E376500D31EA9 /* Project object */;
 }
